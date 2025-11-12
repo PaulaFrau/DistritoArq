@@ -1,0 +1,42 @@
+/* --- HEADER --- */
+.navbar {
+  border-bottom: 1px solid #111;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Subrayado en hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #c8a2ff;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Subrayado en la opción activa */
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #c8a2ff !important;
+}
