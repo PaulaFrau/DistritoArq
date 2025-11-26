@@ -40,3 +40,18 @@
 .nav-link:hover {
   color: #c8a2ff !important;
 }
+
+/*MAIN*/
+/* Espai entre les imatges i efecte hover */
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.project-img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
