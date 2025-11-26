@@ -16,6 +16,14 @@
   transition: color 0.3s ease;
 }
 
+.blanc {
+  color: white !important;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
 /* Subrayado en hover */
 .nav-link::after {
   content: '';
