@@ -1,12 +1,15 @@
 /* --- HEADER --- */
+
 .navbar {
   border-bottom: 1px solid #111;
 }
+
 
 .navbar-brand {
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
+
 
 .nav-link {
   color: white !important;
@@ -15,6 +18,7 @@
   position: relative;
   transition: color 0.3s ease;
 }
+
 
 /* Subrayado en hover */
 .nav-link::after {
@@ -28,30 +32,52 @@
   transition: width 0.3s;
 }
 
+
 .nav-link:hover::after {
   width: 100%;
 }
+
 
 /* Subrayado en la opción activa */
 .nav-link.active::after {
   width: 100%;
 }
 
+
 .nav-link:hover {
   color: #c8a2ff !important;
 }
 
-/*MAIN*/
+
+
+/* --- MAIN --- */
+
+
 /* Espai entre les imatges i efecte hover */
 .project-img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
+
+  transition: 
+    transform 0.5s ease,
+    filter 0.5s ease;
+
+  /* elimina l'aspecte massa "quadrat" */
+  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.12));
 }
 
+
+/* Efecte quan passes el ratolí */
 .project-img:hover {
-  transform: scale(1.03);
-  opacity: 0.9;
+  transform: scale(1.05);
+
+  filter: drop-shadow(0 25px 35px rgba(0,0,0,0.22));
+}
+
+
+/* Més aire entre projectes */
+.row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
 }
