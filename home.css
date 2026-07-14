@@ -55,3 +55,20 @@
   transform: scale(1.03);
   opacity: 0.9;
 }
+
+img {
+    display: block;
+}
+
+.bg-black p {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+@media(max-width:991px){
+
+    .bg-black p{
+        font-size: 0.9rem;
+    }
+
+}
