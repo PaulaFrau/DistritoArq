@@ -134,18 +134,15 @@
 
 @media(max-width:900px) {
 
-
   .contact-wrapper {
     display: flex;
     flex-direction: column;
   }
 
-
   .contact-img {
     width: 100%;
     height: 40vh;
   }
-
 
   .contact-info {
     width: 100%;
@@ -155,7 +152,6 @@
 
     align-items: center;
   }
-
 
   .linea-info {
 
@@ -173,5 +169,13 @@
     margin-bottom: 25px;
   }
 
+}
+
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+  }
 
 }

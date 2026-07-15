@@ -96,7 +96,6 @@
 
 
 /* Galería vertical */
-
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -130,15 +129,23 @@
 
 /* Responsive */
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
   .galeria {
     grid-template-columns: 1fr;
   }
 
-
   .foto {
     height: 600px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
   }
 
 }
