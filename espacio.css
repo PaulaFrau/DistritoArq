@@ -19,6 +19,9 @@
   transition: color 0.3s ease;
 }
 
+.logo-distrito {
+  font-weight: 900;
+}
 
 /* Subratllat hover */
 .nav-link::after {
